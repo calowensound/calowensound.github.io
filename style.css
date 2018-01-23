@@ -65,9 +65,15 @@ body {
   width: 100%;
   transition: top 0.3s;
 }
+#scrollnav h3 {
+  float: left;
+  display: block;
+  color: white;
+  font-size: 1.02em;
+}
 #scrollnav a {
     float: right;
-    display: block;
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 15px;
