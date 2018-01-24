@@ -45,25 +45,132 @@
         most at home in. The studio that comes to you.</p>
       <h1 class="calowensound">CAL OWEN SOUND</h1>
       <p>
-      <p>I'm Cal. A professional sound engineer and musician, originaly from the UK.
-        After studying Music Technology at college, I went on to University
-        – where I studied Studio Recording Techniques, Mixing, ADR, Foley,
-        Music For Film, Experimental Sound and more – I graduated with a
-        Honours Degree in Music Technology and moved to London, UK in 2011
-        where I spent 5 years working at a North London recording studio
-        workign with artists and clients such as Gary Barlow, Joss Stone,
-        ESSO, Fantastic Fireworks, Shayne Ward, Jason Donavan, Bill Kenwright
-        Limited and Ricky Wilson to name a few. In August 2012 I moved to
-        Vancouver and have been freelancing since.</p>
+      <p>I'm Cal. A Vancouver, BC based professional sound engineer and musician,
+        originaly from the UK.
+        </p>
+        <p class="collapsible">DISCOGRAPHY</p>
+        <table id="disc" style="width:100%">
+          <tr>
+            <th>ARTIST</th>
+            <th>RECORD</th>
+            <th>CREDIT</th>
+          </tr>
+          <tr>
+            <td>Jeff Wayne</td>
+            <td>Jeff Wayne's Musical Version of The War of The Worlds - The New Generation (2012)</td>
+            <td>Recording Engineer, Audio Editing, Backing Vocals</td>
+          </tr>
+          <tr>
+            <td>Hundred Reasons</td>
+            <td>Year Ten: Live at the Forum (2012)</td>
+            <td>Live Guitarist</td>
+          </tr>
+          <tr>
+            <td>Kostis Chavales</td>
+            <td>Happy Life (2017)</td>
+            <td>Audio Editing (Drums & Bass)</td>
+          </tr>
+          <tr>
+            <td>Ziwi</td>
+            <td>Float (2016)</td>
+            <td>Audio Editing</td>
+          </tr>
+          <tr>
+            <td>Solcal</td>
+            <td>Games E.P(2016)</td>
+            <td>Producer</td>
+          </tr>
+          <tr>
+            <td>Two Cities</td>
+            <td>Original London Cast Soundtrack (2016)</td>
+            <td>Audio Restoration</td>
+          </tr>
+          <tr>
+            <td>Jeff Wayne</td>
+            <td>Esso - Synergy "Tiger" (2015)</td>
+            <td>Recording Engineer, Audio Editing, Mix Engineer</td>
+          </tr>
+          <tr>
+            <td>Room 94</td>
+            <td>Room 94 (2015)</td>
+            <td>Recording Engineer, Audio Editing (Drums)</td>
+          </tr>
+          <tr>
+            <td>Scholars</td>
+            <td>Damage / Rage Concern E.P (2014)</td>
+            <td>Mix Engineer, Guitarist, Backing Vocals</td>
+          </tr>
+          <tr>
+            <td>Scholars</td>
+            <td>Always Lead, Never Follow (2014)</td>
+            <td>Guitarist, Backing Vocals</td>
+          </tr>
+        </table>
+
+        <p class="collapsible">LIVE, FILM & TV, RADIO</p>
+    <table id="proj" style="width:100%">
+      <tr>
+        <th>PROJECT</th>
+        <th>CREDIT</th>
+      </tr>
+      <tr>
+        <td>The Cannon (Feature Film - 2017)</td>
+        <td>Boom Operator, Sound Assistant</td>
+      </tr>
+      <tr>
+        <td>World War Anywhere (Short Film - 2017)</td>
+        <td>Composer</td>
+      </tr>
+      <tr>
+        <td>The Unconditional Love (Short Film - 2017)</td>
+        <td>Production Sound</td>
+      </tr>
+      <tr>
+        <td>Stakeout (Christmas Special) (YouTube Short - 2016)</td>
+        <td>Production Sound</td>
+      </tr>
+      <tr>
+        <td>Camposphere (Event - 2016)</td>
+        <td>Live Sound Engineer</td>
+      </tr>
+      <tr>
+        <td>Jeff Wayne's Musical Version of The War of The Worlds: Alive on Stage (Theatre - 2016)</td>
+        <td>Sound Pre-Production</td>
+      </tr>
+      <tr>
+        <td>Fantastic Fireworks - Jeff Wayne's Musical Version of The War of The Worlds (2015)</td>
+        <td>Audio Editor, CGI Editor</td>
+      </tr>
+      <tr>
+        <td>Jeff Wayne's Musical Version of The War of The Worlds: Alive on Stage (Arena Tour - 2014)</td>
+        <td>Sound Pre-Production</td>
+      </tr>
+      <tr>
+        <td>Fargo - The Eve Of The War (TV - 2015)</td>
+        <td>Audio Editor</td>
+      </tr>
+      <tr>
+        <td>Jeff Wayne's Musical Version of The War of The Worlds: Alive on Stage (Arena Tour - 2012)</td>
+        <td>Sound Pre-Production</td>
+      </tr>
+      <tr>
+        <td>Ben Jones - Outside The Ring (TV - 2014)</td>
+        <td>Composer</td>
+      </tr>
+      <tr>
+        <td>93.7 Express FM (Radio - 2012)</td>
+        <td>Sound Engineer</td>
+      </tr>
+    </table>
     </div> <!-- container -->
   </div> <!-- about -->
 
   <div id="rates">
     <div class="container">
       <h1>RATES</h1>
-      <p>Every gig is unique and requires a different set up and approach than
-        the last job, but hopefully this will give you a rough idea of what
-        you might expect to pay for your requirements. Please give me a shout
+      <p>Every project is unique and requires a different set up and approach than
+        the last, but hopefully this will give you a rough idea of what
+        you might expect for your project. Please give me a shout
         and tell me a bit about your project. I'd love to get involved with
         your next project, so let's work something out. All rates include gear
         rental and set-up time</p>
@@ -125,6 +232,22 @@ function scrollFunction() {
   } else {
     document.getElementById("scrollnav").style.top = "-200px";
   }
+}
+</script>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
 }
 </script>
 

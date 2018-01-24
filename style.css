@@ -42,6 +42,7 @@ body {
   margin: 0 auto;
 }
 
+
 #mission {
   color: white;
   background-image: url("images/cosbg.png");
@@ -90,9 +91,44 @@ body {
 #about {
   text-align: center;
   font-size: 1em;
-  margin-top: 60px;
+  padding-top: 60px;
   margin-bottom: 60px;
 }
+
+.collapsible {
+  background-color: #eee;
+  color: black;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  margin-top: 40px;
+  margin-bottom: 0;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 18px;
+}
+
+table#disc {
+  padding-bottom: 40px;
+}
+table#proj {
+  padding-bottom: 40px;
+}
+table#disc tr:nth-child(even) {
+   background-color: lightgrey;
+}
+table#proj tr:nth-child(even) {
+    background-color: lightgrey;
+}
+th {
+    font-size: 1.2em;
+    padding: 10px;
+}
+td {
+  padding: 6px;
+}
+
 #rates {
   background-color: lightgray;
   text-align: center;
